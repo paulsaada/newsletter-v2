@@ -1,0 +1,9 @@
+:root {
+   --subtitle-text-color: #94AEBF;
+}
+
+.subtitle {
+   color: var(--subtitle-text-color);
+   font-family: 'Azo-Sans-Bold';
+   font-size: 20px;
+}
