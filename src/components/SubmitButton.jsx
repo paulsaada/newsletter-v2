@@ -6,7 +6,7 @@ class SubmitButton extends Component {
    render() {
       return (
          <div>
-            <button>NEXT</button>
+            <button className="button">NEXT</button>
          </div>
       );
    }
