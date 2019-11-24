@@ -1,0 +1,21 @@
+:root {
+   --field-color: #FFFFFF1A;
+   --text-color: #94AEBF;
+}
+
+.name--field {
+   background: var(--field-color);
+   color: var(--text-color);
+   width: 235px;
+   height: 45px;
+   font-size: 24px;
+   margin: 5px 5px;
+   padding: 20px;
+   border: none;
+   border-radius: 5px;
+   box-sizing: border-box;
+}
+
+.name--field::placeholder {
+   opacity: 40%;
+}
