@@ -5,6 +5,7 @@ import Subtitle from './components/Subtitle';
 import EmailField from './components/EmailField';
 import NameField from './components/NameField';
 import Checkbox from './components/Checkbox';
+import UserAgreement from './components/UserAgreement';
 import './stylesheets/App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <EmailField />
       <NameField />
       <Checkbox />
+      <UserAgreement />
       <SubmitButton />
     </div>
   );
