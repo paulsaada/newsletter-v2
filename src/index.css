@@ -77,3 +77,14 @@ body {
   margin: 5px;
   padding: 0;
 }
+
+.center {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

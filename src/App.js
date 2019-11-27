@@ -34,7 +34,7 @@ class App extends React.Component {
     switch (step) {
       case 1:
         return (
-          <div className="app--container">
+          <div className="app--container center">
             <Title />
             <EmailCollection
               nextStep={ this.nextStep }
@@ -45,7 +45,7 @@ class App extends React.Component {
         )
       case 2:
         return (
-          <div className="app--container">
+          <div className="app--container center">
             <Title />
             <NameCollection
               nextStep={ this.nextStep }
@@ -56,7 +56,7 @@ class App extends React.Component {
         )
       case 3:
         return (
-          <div className="app--container">
+          <div className="app--container center">
             <Title text="congratulations!" />
             <CongratsUser />
           </div>
