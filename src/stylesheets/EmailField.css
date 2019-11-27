@@ -1,11 +1,6 @@
-:root {
-   --field-color: #FFFFFF1A;
-   --text-color: #94AEBF;
-}
-
 .email--field {
    background: var(--field-color);
-   color: var(--text-color);
+   color: var(--secondary-text-color);
    font-family: 'Azo-Sans';
    font-size: 24px;
    width: 374px;

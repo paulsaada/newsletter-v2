@@ -1,5 +1,9 @@
 :root {
   --main-bg-color: #120F23;
+  --title-text-color: #B6FDBF;
+  --secondary-text-color: #94AEBF;
+  --disclaimer-text: #9B9B9B;
+  --field-color: #FFFFFF1A;
 }
 
 @font-face {
@@ -43,4 +47,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.form--container {
+  display: flex;
 }

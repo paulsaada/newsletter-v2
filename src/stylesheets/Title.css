@@ -1,7 +1,3 @@
-:root {
-   --title-text-color: #B6FDBF;
-}
-
 .title {
    color: var(--title-text-color);
    font-family: 'Elaine_D02';

@@ -1,8 +1,7 @@
 import React from 'react';
-import SubmitButton from './components/SubmitButton';
 import Title from './components/Title';
 import Subtitle from './components/Subtitle';
-import EmailField from './components/EmailField';
+import EmailForm from './containers/EmailForm';
 import NameField from './components/NameField';
 import Checkbox from './components/Checkbox';
 import UserAgreement from './components/UserAgreement';
@@ -13,11 +12,10 @@ function App() {
     <div className="App">
       <Title />
       <Subtitle />
-      <EmailField />
+      <EmailForm />
       <NameField />
       <Checkbox />
       <UserAgreement />
-      <SubmitButton />
     </div>
   );
 }

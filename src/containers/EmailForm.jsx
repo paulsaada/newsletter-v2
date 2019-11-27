@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import EmailField from '../components/EmailField';
 import SubmitButton from '../components/SubmitButton';
-import '../stylesheets/EmailForm.css';
 
 class EmailForm extends Component {
    state = {}
    render() {
       return (
-         <div>
+         <div className="form--container">
             <EmailField />
             <SubmitButton />
          </div>
