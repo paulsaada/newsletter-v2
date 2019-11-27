@@ -3,10 +3,14 @@ import '../stylesheets/Subtitle.css'
 
 class Subtitle extends Component {
    state = {}
+
+   static defaultProps = {
+      text: "SIGN UP FOR THE TLC NEWSLETTER"
+   }
    render() {
       return (
          <div>
-            <p className="subtitle">SIGN UP FOR THE TLC NEWSLETTER</p>
+            <p className="subtitle">{ this.props.text }</p>
          </div>
       );
    }
