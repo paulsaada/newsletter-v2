@@ -69,3 +69,7 @@ body {
 .input--field::placeholder {
   opacity: 40%;
 }
+
+.field--spacing {
+  padding-right: 50px;
+}

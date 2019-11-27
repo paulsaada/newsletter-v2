@@ -2,7 +2,7 @@ import React from 'react';
 import Title from './components/Title';
 import Subtitle from './components/Subtitle';
 import EmailForm from './containers/EmailForm';
-import NameField from './components/NameField';
+import NameForm from './containers/NameForm';
 import Privacy from './containers/Privacy';
 import './stylesheets/App.css';
 
@@ -12,7 +12,7 @@ function App() {
       <Title />
       <Subtitle />
       <EmailForm />
-      <NameField />
+      <NameForm />
       <Privacy />
     </div>
   );
