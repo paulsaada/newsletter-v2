@@ -6,14 +6,13 @@ import NameForm from './containers/NameForm';
 import Privacy from './containers/Privacy';
 import CongratsUser from './containers/Congratulations';
 import './stylesheets/App.css';
+import EmailCollection from './pages/EmailCollection';
 
 function App() {
   return (
     <div className="App">
       <Title />
-      <Subtitle />
-      <EmailForm />
-      <Privacy />
+      <EmailCollection />
       <Subtitle text="ALMOST DONE! PLEASE ENTER YOUR FIRST AND LAST NAME" />
       <NameForm />
       <Privacy />
