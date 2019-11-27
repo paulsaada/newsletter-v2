@@ -69,3 +69,11 @@ body {
 .input--field::placeholder {
   opacity: 40%;
 }
+
+.congrats--text {
+  font-size: 18px;
+  font-family: 'Azo-Sans';
+  color: var(--secondary-text-color);
+  margin: 5px;
+  padding: 0;
+}

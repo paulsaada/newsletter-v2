@@ -4,6 +4,7 @@ import Subtitle from './components/Subtitle';
 import EmailForm from './containers/EmailForm';
 import NameForm from './containers/NameForm';
 import Privacy from './containers/Privacy';
+import CongratsUser from './containers/Congratulations';
 import './stylesheets/App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Subtitle text="ALMOST DONE! PLEASE ENTER YOUR FIRST AND LAST NAME" />
       <NameForm />
       <Privacy />
+      <CongratsUser />
     </div>
   );
 }

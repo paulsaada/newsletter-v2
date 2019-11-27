@@ -5,7 +5,7 @@ class Subtitle extends Component {
    state = {}
 
    static defaultProps = {
-      text: "SIGN UP FOR THE TLC NEWSLETTER"
+      text: "SIGN UP FOR OUR NEWSLETTER"
    }
    render() {
       return (
