@@ -9,7 +9,7 @@ class NameForm extends Component {
          <div className="flex--container">
             <NameField placeholder="First Name" />
             <NameField placeholder="Last Name" />
-            <SubmitButton />
+            <SubmitButton text="SIGN UP" />
          </div>
       );
    }

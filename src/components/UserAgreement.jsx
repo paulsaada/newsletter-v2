@@ -6,7 +6,7 @@ class UserAgreement extends Component {
       return (
          <div>
             <p className="user--agreement">
-               I agree to receive information from Discovery Communications in accordance with the following Privacy Policy
+               I agree to receive information from Interactive Nerd in accordance with the following Privacy Policy
             </p>
          </div>
       );

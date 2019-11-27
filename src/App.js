@@ -12,6 +12,8 @@ function App() {
       <Title />
       <Subtitle />
       <EmailForm />
+      <Privacy />
+      <Subtitle text="ALMOST DONE! PLEASE ENTER YOUR FIRST AND LAST NAME" />
       <NameForm />
       <Privacy />
     </div>

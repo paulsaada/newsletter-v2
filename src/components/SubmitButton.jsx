@@ -3,10 +3,15 @@ import '../stylesheets/SubmitButton.css'
 
 class SubmitButton extends Component {
    state = {}
+
+   static defaultProps = {
+      text: "NEXT"
+   }
+
    render() {
       return (
          <div>
-            <button className="button">NEXT</button>
+            <button className="button">{ this.props.text }</button>
          </div>
       );
    }
