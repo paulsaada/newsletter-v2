@@ -26,12 +26,6 @@ class App extends React.Component {
     this.setState({ [input]: e.target.value });
   };
 
-  // console.log user signup data
-  signUp = () => {
-    console.log(App.state);
-  };
-
-
   render() {
     const { step } = this.state;
     const { email, firstName, lastName } = this.state;
@@ -40,7 +34,7 @@ class App extends React.Component {
     switch (step) {
       case 1:
         return (
-          <div>
+          <div className="app--container">
             <Title />
             <EmailCollection
               nextStep={ this.nextStep }
@@ -51,7 +45,7 @@ class App extends React.Component {
         )
       case 2:
         return (
-          <div>
+          <div className="app--container">
             <Title />
             <NameCollection
               nextStep={ this.nextStep }
@@ -62,7 +56,7 @@ class App extends React.Component {
         )
       case 3:
         return (
-          <div>
+          <div className="app--container">
             <Title text="congratulations!" />
             <CongratsUser />
           </div>
