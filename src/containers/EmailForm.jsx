@@ -6,7 +6,7 @@ class EmailForm extends Component {
    state = {}
    render() {
       return (
-         <div className="form--container">
+         <div className="flex--container">
             <EmailField />
             <SubmitButton />
          </div>

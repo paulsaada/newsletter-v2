@@ -3,8 +3,7 @@ import Title from './components/Title';
 import Subtitle from './components/Subtitle';
 import EmailForm from './containers/EmailForm';
 import NameField from './components/NameField';
-import Checkbox from './components/Checkbox';
-import UserAgreement from './components/UserAgreement';
+import Privacy from './containers/Privacy';
 import './stylesheets/App.css';
 
 function App() {
@@ -14,8 +13,7 @@ function App() {
       <Subtitle />
       <EmailForm />
       <NameField />
-      <Checkbox />
-      <UserAgreement />
+      <Privacy />
     </div>
   );
 }
