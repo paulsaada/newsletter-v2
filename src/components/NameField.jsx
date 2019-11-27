@@ -7,7 +7,7 @@ class NameField extends Component {
 		return (
 			<div>
 				<input
-					className="name--field"
+					className="input--field name--field"
 					placeholder={ this.props.placeholder }
 					required={ true }
 					type={ this.props.type }
