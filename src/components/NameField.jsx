@@ -4,15 +4,26 @@ import '../stylesheets/NameField.css';
 class NameField extends Component {
 	state = {};
 	render() {
+		const {
+			values,
+			handleChange,
+			placeholder,
+			type,
+			id,
+			name
+		} = this.props;
+
 		return (
 			<div>
 				<input
 					className="input--field name--field"
-					placeholder={ this.props.placeholder }
+					placeholder={ placeholder }
 					required={ true }
-					type={ this.props.type }
-					id={ this.props.id }
-					name={ this.props.name }
+					type={ type }
+					id={ id }
+					name={ name }
+					values={ values }
+					handleChange={ handleChange }
 				/>
 			</div>
 		);

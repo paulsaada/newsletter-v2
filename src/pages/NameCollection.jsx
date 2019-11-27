@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import EmailForm from '../containers/EmailForm';
+import NameForm from '../containers/NameForm';
 import Privacy from '../containers/Privacy';
 import Subtitle from '../components/Subtitle';
 
-class EmailCollection extends Component {
+class NameCollection extends Component {
    state = {}
 
    continue = e => {
@@ -16,18 +16,20 @@ class EmailCollection extends Component {
       const { values, handleChange, nextStep } = this.props;
       return (
          <div>
-            <Subtitle />
+            <Subtitle
+               text="ALMOST DONE! PLEASE ENTER YOUR FIRST AND LAST NAME"
+            />
             <form onSubmit={ this.continue }>
-               <EmailForm
+               <NameForm
                   values={ values }
                   handleChange={ handleChange }
                   nextStep={ nextStep }
                />
+               <Privacy />
             </form>
-            <Privacy />
          </div>
       );
    }
 }
 
-export default EmailCollection;
+export default NameCollection;

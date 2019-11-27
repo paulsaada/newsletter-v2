@@ -1,24 +1,75 @@
 import React from 'react';
 import Title from './components/Title';
-import Subtitle from './components/Subtitle';
-import EmailForm from './containers/EmailForm';
-import NameForm from './containers/NameForm';
-import Privacy from './containers/Privacy';
 import CongratsUser from './containers/Congratulations';
-import './stylesheets/App.css';
 import EmailCollection from './pages/EmailCollection';
+import NameCollection from './pages/NameCollection';
+import './stylesheets/App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Title />
-      <EmailCollection />
-      <Subtitle text="ALMOST DONE! PLEASE ENTER YOUR FIRST AND LAST NAME" />
-      <NameForm />
-      <Privacy />
-      <CongratsUser />
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    step: 1,
+    email: '',
+    firstName: '',
+    lastName: ''
+  }
+
+  // proceed to next step
+  nextStep = () => {
+    const { step } = this.state;
+    this.setState({
+      step: step + 1
+    });
+  };
+
+  // handle change upon submit
+  handleChange = input => e => {
+    this.setState({ [input]: e.target.value });
+  };
+
+  // console.log user signup data
+  signUp = () => {
+    console.log(App.state);
+  };
+
+
+  render() {
+    const { step } = this.state;
+    const { email, firstName, lastName } = this.state;
+    const values = { email, firstName, lastName };
+
+    switch (step) {
+      case 1:
+        return (
+          <div>
+            <Title />
+            <EmailCollection
+              nextStep={ this.nextStep }
+              handleChange={ this.handleChange }
+              values={ values }
+            />
+          </div>
+        )
+      case 2:
+        return (
+          <div>
+            <Title />
+            <NameCollection
+              nextStep={ this.nextStep }
+              handleChange={ this.handleChange }
+              values={ values }
+            />
+          </div>
+        )
+      case 3:
+        return (
+          <div>
+            <Title text="congratulations!" />
+            <CongratsUser />
+          </div>
+        )
+      default:
+    }
+  }
 }
 
 export default App;
