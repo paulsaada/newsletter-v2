@@ -14,17 +14,16 @@ class NameCollection extends Component {
 
    render() {
       const { values, handleChange, nextStep } = this.props;
+      const formProps = { nextStep, handleChange, values };
+      const nextStage = this.continue;
+
       return (
          <div>
             <Subtitle
                text="ALMOST DONE! PLEASE ENTER YOUR FIRST AND LAST NAME"
             />
-            <form onSubmit={ this.continue }>
-               <NameForm
-                  values={ values }
-                  handleChange={ handleChange }
-                  nextStep={ nextStep }
-               />
+            <form onSubmit={ nextStage }>
+               <NameForm { ...formProps } />
                <Privacy />
             </form>
          </div>
