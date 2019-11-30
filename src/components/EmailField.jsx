@@ -3,6 +3,7 @@ import '../stylesheets/EmailField.css';
 
 class EmailField extends Component {
    state = {}
+
    render() {
       const { values, handleChange } = this.props;
       return (
@@ -14,7 +15,8 @@ class EmailField extends Component {
                type="email"
                id="email"
                name="email"
-               onChange={ handleChange('email') } userInputValue={ values.email }
+               onChange={ handleChange('email') }
+               inputValue={ values.email }
             />
          </div>
       );
