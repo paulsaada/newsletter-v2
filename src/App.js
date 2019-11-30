@@ -24,39 +24,37 @@ class App extends React.Component {
   // handle change upon submit
   handleChange = input => e => {
     this.setState({ [input]: e.target.value });
+    console.log(e.target.value);
   };
 
+
   render() {
-    const { step } = this.state;
-    const { email, firstName, lastName } = this.state;
+    const { step, email, firstName, lastName } = this.state;
     const values = { email, firstName, lastName };
+    const nextStep = this.nextStep;
+    const handleChange = this.handleChange;
+    const formProps = { nextStep, handleChange, values };
+    const containerStyles = "app--container center";
 
     switch (step) {
       case 1:
         return (
-          <div className="app--container center">
+          <div className={ containerStyles }>
             <Title />
-            <EmailCollection
-              nextStep={ this.nextStep }
-              handleChange={ this.handleChange }
-              values={ values }
-            />
+            <EmailCollection { ...formProps } />
           </div>
         )
       case 2:
         return (
-          <div className="app--container center">
+          <div className={ containerStyles }>
             <Title />
-            <NameCollection
-              nextStep={ this.nextStep }
-              handleChange={ this.handleChange }
-              values={ values }
-            />
+            <NameCollection { ...formProps } />
           </div>
         )
       case 3:
         return (
-          <div className="app--container center">
+          <div className={ containerStyles }>
+            { console.log(values) }
             <Title text="congratulations!" />
             <CongratsUser />
           </div>
