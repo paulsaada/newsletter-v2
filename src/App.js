@@ -24,9 +24,7 @@ class App extends React.Component {
   // handle change upon submit
   handleChange = input => e => {
     this.setState({ [input]: e.target.value });
-    console.log(e.target.value);
   };
-
 
   render() {
     const { step, email, firstName, lastName } = this.state;
@@ -54,7 +52,6 @@ class App extends React.Component {
       case 3:
         return (
           <div className={ containerStyles }>
-            { console.log(values) }
             <Title text="congratulations!" />
             <CongratsUser />
           </div>

@@ -25,7 +25,10 @@ class NameForm extends Component {
                handleChange={ handleChange('lastName') }
                values={ values.lastName }
             />
-            <SubmitButton text="SIGN UP" />
+            <SubmitButton
+               text="SIGN UP"
+               onSubmit={ console.log(values) }
+            />
          </div>
       );
    }
