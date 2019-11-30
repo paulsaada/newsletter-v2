@@ -22,8 +22,8 @@ class NameField extends Component {
 					type={ type }
 					id={ id }
 					name={ name }
-					values={ values }
-					handleChange={ handleChange }
+					onChange={ handleChange }
+					inputValue={ values }
 				/>
 			</div>
 		);

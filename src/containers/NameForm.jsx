@@ -4,19 +4,26 @@ import SubmitButton from '../components/SubmitButton';
 
 class NameForm extends Component {
    state = {}
+
    render() {
       const { values, handleChange } = this.props;
       return (
          <div className="flex--container">
             <NameField
                placeholder="First Name"
-               values={ values }
-               handleChange={ handleChange }
+               type="firstName"
+               id="firstName"
+               name="firstName"
+               handleChange={ handleChange('firstName') }
+               values={ values.firstName }
             />
             <NameField
                placeholder="Last Name"
-               values={ values }
-               handleChange={ handleChange }
+               type="lastName"
+               id="lastName"
+               name="lastName"
+               handleChange={ handleChange('lastName') }
+               values={ values.lastName }
             />
             <SubmitButton text="SIGN UP" />
          </div>
